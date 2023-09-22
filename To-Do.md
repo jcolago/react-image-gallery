@@ -1,0 +1,29 @@
+------ COMPONENTS/BASE GOALS-----
+    -[] App.jsx
+        -[] Add components
+        -[] Axios GET route to retrieve the image array
+            -[] Store data in app.jsx for prop passing
+            -[] State for image gallery
+    -[] GalleryList.jsx
+        -[] Represents the image array
+        -[] Loops over arry to display single image
+        -[] Make GalleryItem to display on dom
+    -[] GalleryItem.jsx
+     -[] Like button that increments
+        -[] Axios PUT for the like count
+        -[] Display number of likes in item
+        -[] Refresh page when clicked (calls GET function)
+     -[] Discription that displays when clicked (use conditional rendering)
+
+------STRETCH GOALS------
+    -[] Use get branching for each feature of application
+    -[] Create database called "react_gallery"
+        -[] Create SQL file for project
+    -[] Make FORM component to add new image to gallery
+        -[] Create POST route for forum with inputs for images (SERVER, SANITIZE DATA)
+        -[] Axios POST on client side
+    -[] Ability to DELETE a gallery item
+        -[] DELETE route in server (SANITIZE THAT DATA)
+        -[] Axios DELETE path with id
+    -[] Style with material-ui
+    -[] Use multer for image upload
