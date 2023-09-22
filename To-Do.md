@@ -1,9 +1,9 @@
 ------ COMPONENTS/BASE GOALS-----
     -[] App.jsx
         -[] Add components
-        -[] Axios GET route to retrieve the image array
-            -[] Store data in app.jsx for prop passing
-            -[] State for image gallery
+        -[x] Axios GET route to retrieve the image array
+            -[x] Store data in app.jsx for prop passing
+            -[x] State for image gallery
     -[] GalleryList.jsx
         -[] Represents the image array
         -[] Loops over arry to display single image
