@@ -1,14 +1,20 @@
 
 //Exports function for use in GallerList and props used. Conditionally renders discription based on discription state
-export default function GalleryListItem({ image, addLike }) {
-    return(
+export default function GalleryListItem({ image, addLike, setShowDescription, showDescription }) {
+    return (
         <div className="image-card">
-            <div className="image"><img src={image.path} alt="" /></div>
-            <div className="likes"> 
-            <button className="like-button" onClick={() => addLike(image.id)}>Like!</button>
-            <p><span>{image.likes}</span> likes! </p>
+            <div className="image" ><img src={image.path} onClick={() => setShowDescription(true)} />
+            </div>
+            
+                {showDescription !== null && (
+                    <div className="description">
+                    <p>{image.description}</p><button className="close-description-button" onClick={() => setShowDescription(null)}>Close Description</button>
+                    </div>)}
+            
+            <div className="likes">
+                <p><span>{image.likes}</span> likes! </p><button className="like-button" onClick={() => addLike(image.id)}>Like!</button>
             </div>
         </div>
-        
+
     )
 }

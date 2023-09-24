@@ -4,15 +4,15 @@
         -[x] Axios GET route to retrieve the image array
             -[x] Store data in app.jsx for prop passing
             -[x] State for image gallery
-    -[] GalleryList.jsx
-        -[] Represents the image array
-        -[] Loops over arry to display single image
-        -[] Make GalleryItem to display on dom
+    -[x] GalleryList.jsx
+        -[x] Represents the image array
+        -[x] Loops over arry to display single image
+        -[x] Make GalleryItem to display on dom
     -[] GalleryItem.jsx
-     -[] Like button that increments
-        -[] Axios PUT for the like count
-        -[] Display number of likes in item
-        -[] Refresh page when clicked (calls GET function)
+     -[x] Like button that increments
+        -[x] Axios PUT for the like count
+        -[x] Display number of likes in item
+        -[x] Refresh page when clicked (calls GET function)
      -[] Discription that displays when clicked (use conditional rendering)
 
 ------STRETCH GOALS------

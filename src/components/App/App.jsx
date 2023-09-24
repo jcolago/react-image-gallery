@@ -6,7 +6,9 @@ import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
-  let [galleryList, setGalleryList] = useState ([]);
+  const [galleryList, setGalleryList] = useState ([]);
+  const [showDescription, setShowDescription] = useState(null); 
+
 
   //Runs fetchGallery on page load
   useEffect(()=> {
@@ -44,7 +46,7 @@ const addLike = (id) => (
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <GalleryList galleryList={galleryList} addLike={addLike} />
+        <GalleryList galleryList={galleryList} addLike={addLike} setShowDescription={setShowDescription} showDescription={showDescription} />
       </div>
     );
     }

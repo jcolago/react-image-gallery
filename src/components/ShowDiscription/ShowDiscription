@@ -1,0 +1,13 @@
+export default function ShowDiscription({ image, addLike, setShowDescription }) {
+    return(
+        <div className="image-card">
+            <div className="image" ><img src={image.path} onClick={() =>setShowDiscription(true)}/> 
+            <p>{image.description}</p><button className="close-description" onClick={() => setShowDescription(null)}>Close Description</button>
+            </div>
+            <div className="likes"> 
+           <p><span>{image.likes}</span> likes! </p><button className="like-button" onClick={() => addLike(image.id)}>Like!</button>
+            </div>
+        </div>
+        
+    )
+}
