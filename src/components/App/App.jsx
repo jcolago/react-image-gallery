@@ -6,6 +6,7 @@ import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
+  //State used for the gallery list and image descriptions
   const [galleryList, setGalleryList] = useState ([]);
   const [showDescription, setShowDescription] = useState(null); 
 
@@ -40,7 +41,7 @@ const addLike = (id) => (
 
 
 
-  
+  //Set up for the DOM and passed props
     return (
       <div className="App">
         <header className="App-header">

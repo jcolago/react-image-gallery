@@ -1,3 +1,4 @@
+//Imports the css file for this component
 import "./GalleryList.css"
 //Imports the GalleryListItem for use and prop passing
 import GalleryListItem from "../GalleryListItem/GalleryListItem"
