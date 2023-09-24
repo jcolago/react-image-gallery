@@ -1,3 +1,4 @@
+import "./GalleryList.css"
 //Imports the GalleryListItem for use and prop passing
 import GalleryListItem from "../GalleryListItem/GalleryListItem"
 
@@ -6,7 +7,7 @@ export default function GalleryList({ galleryList, addLike, setShowDescription, 
     return (
         <div className="gallery-list-container">
             <div className="gallery-header">
-                <h2>Image Gallery</h2>
+                <h1>Image Gallery</h1>
             </div>
             <div className="gallery-list">
                 {galleryList.map((image) => (

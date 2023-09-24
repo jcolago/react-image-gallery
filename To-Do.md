@@ -1,6 +1,6 @@
 ------ COMPONENTS/BASE GOALS-----
-    -[] App.jsx
-        -[] Add components
+    -[x] App.jsx
+        -[x] Add components
         -[x] Axios GET route to retrieve the image array
             -[x] Store data in app.jsx for prop passing
             -[x] State for image gallery
@@ -13,7 +13,7 @@
         -[x] Axios PUT for the like count
         -[x] Display number of likes in item
         -[x] Refresh page when clicked (calls GET function)
-     -[] Discription that displays when clicked (use conditional rendering)
+     -[x] Discription that displays when clicked (use conditional rendering)
 
 ------STRETCH GOALS------
     -[] Use get branching for each feature of application

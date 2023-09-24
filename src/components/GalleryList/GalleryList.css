@@ -1,0 +1,13 @@
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-list-container {
+    padding: 20px;
+}
+
+.gallery-header{
+    color: white;
+}
