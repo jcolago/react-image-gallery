@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+//Imports the GallerList component
+import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
   let [galleryList, setGalleryList] = useState ([]);
@@ -22,17 +24,29 @@ function App() {
       console.log(err)
     });
 
-    
+//Axios PUT route for likes
+const addLike = (id) => (
+  axios
+  .put(`/gallery/like/${id}`)
+  .then((response) => {
+    fetchGallery(); // Refresh the list after updating
+  })
+  .catch((err) => {
+    alert("Error Marking image as liked");
+    console.log(err);
+  })); 
+
+
+
   
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <GalleryList galleryList={galleryList} addLike={addLike} />
       </div>
     );
-}
+    }
 
 export default App;
