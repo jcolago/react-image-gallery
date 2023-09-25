@@ -17,8 +17,8 @@
 
 ------STRETCH GOALS------
     -[] Use get branching for each feature of application
-    -[] Create database called "react_gallery"
-        -[] Create SQL file for project
+    -[x] Create database called "react_gallery"
+        -[x] Create SQL file for project
     -[] Make FORM component to add new image to gallery
         -[] Create POST route for forum with inputs for images (SERVER, SANITIZE DATA)
         -[] Axios POST on client side
