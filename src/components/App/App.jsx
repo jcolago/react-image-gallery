@@ -8,7 +8,7 @@ import GalleryList from '../GalleryList/GalleryList';
 function App() {
   //State used for the gallery list and image descriptions
   const [galleryList, setGalleryList] = useState([]);
-  const [showDescription, setShowDescription] = useState(null);
+
 
 
   //Runs fetchGallery on page load
@@ -48,7 +48,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList galleryList={galleryList} addLike={addLike} setShowDescription={setShowDescription} showDescription={showDescription} />
+      <GalleryList galleryList={galleryList} addLike={addLike} />
     </div>
   );
 }

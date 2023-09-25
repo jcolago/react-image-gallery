@@ -1,8 +1,10 @@
 //Imports the css file for this component
 import "./GalleryListItem.css"
+import { useState } from "react";
 
 //Exports function for use in GallerList and props used. Conditionally renders discription or image based on discription state. Button functionality changes state of setShowDescription. Also has like button functionality.
-export default function GalleryListItem({ image, addLike, setShowDescription, showDescription }) {
+export default function GalleryListItem({ image, addLike }) {
+    const [showDescription, setShowDescription] = useState(null);
     return (
         <div className="image-card">
             {showDescription !== image.id && (

@@ -4,7 +4,7 @@ import "./GalleryList.css"
 import GalleryListItem from "../GalleryListItem/GalleryListItem"
 
 //Function to display the GallerList and pass props
-export default function GalleryList({ galleryList, addLike, setShowDescription, showDescription }) {
+export default function GalleryList({ galleryList, addLike }) {
     return (
         <div className="gallery-list-container">
             <div className="gallery-header">
@@ -12,7 +12,7 @@ export default function GalleryList({ galleryList, addLike, setShowDescription, 
             </div>
             <div className="gallery-list">
                 {galleryList.map((image) => (
-                    <GalleryListItem key={image.id} image={image} addLike={addLike} setShowDescription={setShowDescription} showDescription={showDescription} />
+                    <GalleryListItem key={image.id} image={image} addLike={addLike} />
 
                 ))}
             </div>
